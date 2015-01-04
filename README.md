@@ -13,7 +13,7 @@ The code is compatible with C++98 and newer.
 Usage
 -----
 In order to use uncertain values in your C++ project, just include the uncertainty.hpp in your project
-and start using the uncertain_value<T> class.
+and start using the `uncertain_value<T>` class.
 
 Example
 -------
