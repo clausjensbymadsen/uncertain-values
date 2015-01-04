@@ -4,7 +4,7 @@ This is a light-weight, header-only, templated, immutable class, which handles
 values with an associated uncertainty.
 
 It works well with floating point numeric types like float and double, as well
-as multidimensional variants like vectors or matrices.
+as it's multidimensional counterparts like mathematical vectors and matrices.
 
 The code is unit tested with reasonable code coverage.
 The code satisfies the basic exception safety guarantee.
