@@ -100,7 +100,7 @@ namespace uncertainty {
   }
   #endif
 
-  // TODO: Support for raiding uncertain values to powers?
+  // TODO: Support for raising uncertain values to powers?
 }
 
 #endif
