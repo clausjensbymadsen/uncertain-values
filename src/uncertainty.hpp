@@ -23,6 +23,7 @@
 #ifndef UNCERTAINTY_HPP
 #define UNCERTAINTY_HPP
 
+#include <iosfwd>
 #include <stdexcept>
 
 namespace uncertainty {
@@ -90,15 +91,10 @@ namespace uncertainty {
   typedef uncertain_value<float> uncertain_float;
   typedef uncertain_value<double> uncertain_double;
 
-  // If ostream is included, then extend C++ output streams to support uncertain values
-  // TODO: Check if other library implementations use other ostream include guards (they probably do)
-  // TODO: Probably a bad solution, as it makes include order significant. There might be a better template metaprogramming-based solution.
-  #ifdef _GLIBCXX_OSTREAM
   template<typename T>
   std::ostream& operator<<(std::ostream& stream, uncertain_value<T> value) {
     return stream << value.get_value() << " plus/minus " << value.get_uncertainty();
   }
-  #endif
 
   // TODO: Support for raising uncertain values to powers?
 }
